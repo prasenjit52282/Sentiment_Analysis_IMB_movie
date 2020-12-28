@@ -2,12 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Deploy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="myscript.js"></script>
+    <title>Sentiment Analysis</title>
   </head>
   <body>
-    <form class="" action="http://127.0.0.1:5000/" method="post">
-      <input type="text" name="review" value="">
-      <input type="submit" name="button" value="SUBMIT">
-    </form>
+      <div id="plot" hidden=true></div>
+      <label for="review">Review</label><br>
+      <textarea name="review" id='Rev' value="" style="margin: 0px; width: 406px; height: 114px;"></textarea>
+      <input type="button" name="button" value="SUBMIT" onclick="plotData();">
   </body>
 </html>

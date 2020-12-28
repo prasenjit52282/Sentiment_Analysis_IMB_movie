@@ -1,6 +1,6 @@
 Sentiment Analysis on Movie Review DataSet
 ===========================================
-Modules....................................
+#Modules#
 
 + Data Processing
 	1. Punctuation Removal
@@ -21,3 +21,17 @@ Modules....................................
 	4. Saving Tokenizer & LSTM network in ./logs
 		+ ./logs/tokenizer.json
 		+ ./logs/model.h5
+
++ Deployment on Flask & Frontend
+	1. Flusk app dev in backend_deployment.ipynb
+		+ sentence processing pipeline
+		+ flusk end point for get request with ?review=sentence
+	2. FrontEnd web development in ./deplot-site
+		+ index.html with empty dev for plotting
+		+ myscript.js for backend query and plot with Plotly.js
+
++ Run Method
+	1. Run flusk app in backend_deployment.ipynb
+	2. Open index.html and write movie review
+
+#################################################################
